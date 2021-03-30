@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Alapadatok</h1>
+    <table>
+        <tr>
+            <td class="bal"><label for="nev">Teljes neved</label> </td>
+            <td><input type="text" id="text" name="nev"></td>
+        </tr>
+
+        <tr>
+            <td class="bal"><label for="nem">Nemed</label></td>
+            <td>
+                <input type="radio" name="nem"><label for="ferfi">Férfi</label> 
+                <input type="radio" name="nem"><label for="no">Nő</label> 
+            </td>
+        </tr>
+
+        <tr>
+            <td class="bal"><label for="email">Email</label><b>*</b></td>
+            <td><input type="email" id="text" name="email"></td>
+        </tr>
+        
+        <tr>
+            <td class="bal"><label for="telefonszam">Telefonszám</label><b>*</b></td>
+            <td>
+                <select id="tel">
+                    <option name="telefonszam">+36</option>
+                    <option name="telefonszam">+70</option>
+                    <option name="telefonszam">+15</option>
+                </select>
+                <input type="text" id="teltext" name="telefonszam">
+            </td>
+        </tr>
+
+        <tr>
+            <td class="bal"><label for="nyelv"> Levelezés <br> alapértelmezett nyelve </label><b>*</b></td>
+            <td>
+                <select id="nyelv">
+                    <option name="nyelv">Magyar</option>
+                    <option name="nyelv">Angol</option>
+                    <option name="nyelv">Német</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td class="bal"><label for="szul.ido">Születési idő</label></td>
+            <td>
+                <select class="datum">
+                    <option>Év</option>
+                    <option name="2000">2000</option>
+                    <option name="1999">1999</option>
+                    <option name="1998">1998</option>
+                </select>
+                <select class="datum">
+                    <option>Hó</option>
+                    <option name="jan">Január</option>
+                    <option name="feb">Február</option>
+                    <option name="marc">Március</option>
+                </select>
+                <select class="datum">
+                    <option>Nap</option>
+                    <option name="5">5</option>
+                    <option name="6">6</option>
+                    <option name="7">7</option>
+                </select>
+            </td>
+        </tr>
+
+        <tr>
+            <td rowspan="2" class="bal"><input type="submit" value="Mentés" id="mentes"></td>
+        </tr>
+    </table>
+</body>
+</html>
